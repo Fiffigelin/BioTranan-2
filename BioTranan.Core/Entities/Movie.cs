@@ -16,5 +16,5 @@ public class Movie
     public string? AgeRestrictions { get; set; }
     [Required]
     public int MaximumShows { get; set; }
-    public ICollection<Show>? Shows;
+    public ICollection<Show>? Shows = new List<Show>();
 }

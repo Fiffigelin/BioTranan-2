@@ -50,6 +50,6 @@ public class ShowRepository : IShowRepository
             return result;
         }
 
-        return null!;
+        return null;
     }
 }

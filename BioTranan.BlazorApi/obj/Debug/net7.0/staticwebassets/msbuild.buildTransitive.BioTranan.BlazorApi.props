@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BioTranan.BlazorApi.props" />
+</Project>

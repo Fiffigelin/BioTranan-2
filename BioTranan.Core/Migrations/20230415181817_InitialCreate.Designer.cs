@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BioTranan.Core.Migrations
 {
     [DbContext(typeof(BioTrananDbContext))]
-    [Migration("20230415105926_InitalCreate")]
-    partial class InitalCreate
+    [Migration("20230415181817_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

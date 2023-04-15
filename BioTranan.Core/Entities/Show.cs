@@ -1,6 +1,3 @@
-using System.ComponentModel.DataAnnotations.Schema;
-using Swashbuckle.AspNetCore.Annotations;
-
 namespace BioTranan.Core.Entities;
 
 public class Show
@@ -16,8 +13,5 @@ public class Show
     public DateTime StartTime { get; set; }
     public DateTime EndTime { get; set; }
 
-    public static implicit operator Show(ValueTask<Show?> v)
-    {
-        throw new NotImplementedException();
-    }
+    public ICollection<Booking>? Shows = new List<Booking>();
 }

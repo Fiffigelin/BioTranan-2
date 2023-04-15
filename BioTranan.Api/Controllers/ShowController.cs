@@ -10,7 +10,7 @@ namespace BioTranan.Api.Controllers
     {
         private readonly IShowRepository _showRepository;
 
-        public ShowController(ILogger<ShowController> logger, IShowRepository showRepository)
+        public ShowController(IShowRepository showRepository)
         {
             _showRepository = showRepository;
         }
