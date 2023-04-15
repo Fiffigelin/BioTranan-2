@@ -1,6 +1,6 @@
-using BioTranan.Models.Dtos;
+using BioTranan.Core.Dto;
 
-using BioTranan.Web.Services.Contracts;
+namespace BioTranan.Core.Services.Contracts;
 
 public interface IBookingService
 {

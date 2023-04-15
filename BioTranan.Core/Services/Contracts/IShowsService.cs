@@ -1,4 +1,4 @@
-using BioTranan.Models.Dtos;
+using BioTranan.Core.Dto;
 
 namespace BioTranan.Web.Services.Contracts;
 

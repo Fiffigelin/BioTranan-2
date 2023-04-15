@@ -1,19 +1,19 @@
 using System.Text;
 using System.Text.Json;
-using BioTranan.Models.Dtos;
+using BioTranan.Core.Data;
+using BioTranan.Core.Dto;
+using BioTranan.Core.Services.Contracts;
 using Microsoft.AspNetCore.Components;
 
 namespace BioTranan.Web.Services;
 
 public class BookingService : IBookingService
 {
-    private readonly HttpClient _client;
-    [Inject]
-    public NavigationManager NavigationManager { get; set; }
+    private readonly BioTrananDbContext _context;
 
-    public BookingService(HttpClient client)
+    public BookingService(BioTrananDbContext context)
     {
-        _client = client;
+        _context = context;
     }
 
     public async Task CreateBooking(CreateBookingDto createBooking)
