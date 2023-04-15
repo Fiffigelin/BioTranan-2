@@ -32,7 +32,7 @@ public class ShowRepository : IShowRepository
             Salon = salon,
             Price = showDTO.Price,
             StartTime = showDTO.StartTime,
-            EndTime = showDTO.StartTime.AddMinutes(movie.DurationMinutes + 60)
+            EndTime = showDTO.StartTime.AddMinutes(movie!.DurationMinutes + 60)
         };
 
         var overlappingShow = await _context.Shows.FirstOrDefaultAsync(s =>
@@ -50,6 +50,6 @@ public class ShowRepository : IShowRepository
             return result;
         }
 
-        return null;
+        return null!;
     }
 }

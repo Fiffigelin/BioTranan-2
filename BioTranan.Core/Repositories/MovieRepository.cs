@@ -44,7 +44,7 @@ public class MovieRepository : IMovieRepository
             await _context.SaveChangesAsync();
         }
 
-        return result;
+        return result!;
     }
 
     public async Task<List<Movie>> GetMovieList()

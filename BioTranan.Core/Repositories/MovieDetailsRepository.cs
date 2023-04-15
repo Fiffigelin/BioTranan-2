@@ -50,6 +50,6 @@ public class MovieDetailsRepository : IMovieDetailsRepository
 
     public async Task<IEnumerable<Booking>> GetBookings(int id)
     {
-        return await this._context.Bookings.Where(b => b.Show.Id == id).ToListAsync();
+        return await this._context.Bookings.Where(b => b.Show!.Id == id).ToListAsync();
     }
 }
