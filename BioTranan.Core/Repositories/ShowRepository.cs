@@ -1,10 +1,10 @@
 using BioTranan.Core.Repositories.Contracts;
 using BioTranan.Core.Entities;
 using BioTranan.Core.Data;
-using BioTranan.Api.Dto;
+using BioTranan.Core.Dto;
 using Microsoft.EntityFrameworkCore;
 
-namespace BioTranan.Api.Repositories;
+namespace BioTranan.Core.Repositories;
 
 public class ShowRepository : IShowRepository
 {

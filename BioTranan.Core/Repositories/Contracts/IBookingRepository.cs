@@ -1,5 +1,5 @@
 using BioTranan.Core.Entities;
-using BioTranan.Api.Dto;
+using BioTranan.Core.Dto;
 
 namespace BioTranan.Core.Repositories.Contracts;
 

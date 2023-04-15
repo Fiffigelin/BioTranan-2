@@ -1,9 +1,9 @@
 using BioTranan.Core.Data;
 using BioTranan.Core.Entities;
 using BioTranan.Core.Repositories.Contracts;
-using BioTranan.Api.Dto;
+using BioTranan.Core.Dto;
 
-namespace BioTranan.Api.Repositories;
+namespace BioTranan.Core.Repositories;
 
 public class SalonRepository : ISalonRepository
 {

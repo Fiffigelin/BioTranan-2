@@ -1,7 +1,7 @@
 using BioTranan.Core.Data;
 using BioTranan.Core.Entities;
 using BioTranan.Core.Repositories.Contracts;
-using BioTranan.Api.Dto;
+using BioTranan.Core.Dto;
 using Microsoft.EntityFrameworkCore;
 
 namespace BioTranan.Core.Repositories;
