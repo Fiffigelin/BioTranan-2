@@ -1,5 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using BioTranan.Core.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace BioTranan.Core.Data;
 

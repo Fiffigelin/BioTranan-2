@@ -8,5 +8,5 @@ public class Booking
     public int AmountSeat { get; set; }
     public decimal TotalPrice { get; set; }
     public string? UserEmail { get; set; }
-    public string? BookingCode { get; set; } // = Guid.NewGuid.ToString("N");
+    public string? BookingCode { get; set; }
 }

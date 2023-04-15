@@ -685,6 +685,23 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "BioTranan.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "7.0.4",
+          "Swashbuckle.AspNetCore": "6.4.0"
+        },
+        "compile": {
+          "bin/placeholder/BioTranan.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BioTranan.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -1788,12 +1805,19 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BioTranan.Api/1.0.0": {
+      "type": "project",
+      "path": "../BioTranan.Api/BioTranan.Api.csproj",
+      "msbuildProject": "../BioTranan.Api/BioTranan.Api.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BioTranan.Api >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.4",
       "Microsoft.EntityFrameworkCore >= 7.0.4",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4",
       "Swashbuckle.AspNetCore >= 6.4.0",
@@ -1807,11 +1831,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Core\\BioTranan.Core.csproj",
+      "projectUniqueName": "C:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Core\\BioTranan.Core.csproj",
       "projectName": "BioTranan.Core",
-      "projectPath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Core\\BioTranan.Core.csproj",
+      "projectPath": "C:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Core\\BioTranan.Core.csproj",
       "packagesPath": "C:\\Users\\nyman\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Core\\obj\\",
+      "outputPath": "C:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1832,7 +1856,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Api\\BioTranan.Api.csproj": {
+              "projectPath": "C:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Api\\BioTranan.Api.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1850,6 +1878,12 @@
             "version": "[7.0.4, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.4, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.4, )"
           },
