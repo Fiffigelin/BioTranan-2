@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BioTranan.Web.props" />
+</Project>

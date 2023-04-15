@@ -1,0 +1,59 @@
+body[inherit-scope] {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-content[inherit-scope] {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.table[inherit-scope] {
+	border-spacing: 0 15px;
+	border-collapse: separate;
+}
+.table thead tr th[inherit-scope],
+.table thead tr td[inherit-scope],
+.table tbody tr th[inherit-scope],
+.table tbody tr td[inherit-scope] {
+	vertical-align: middle;
+	border: none;
+}
+.table thead tr th:nth-last-child(1)[inherit-scope],
+.table thead tr td:nth-last-child(1)[inherit-scope],
+.table tbody tr th:nth-last-child(1)[inherit-scope],
+.table tbody tr td:nth-last-child(1)[inherit-scope] {
+	text-align: center;
+}
+.table tbody tr[inherit-scope] {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+.table tbody tr td[inherit-scope] {
+	background: #fff;
+}
+.table tbody tr td:nth-child(1)[inherit-scope] {
+	border-radius: 5px 0 0 5px;
+}
+.table tbody tr td:nth-last-child(1)[inherit-scope] {
+	border-radius: 0 5px 5px 0;
+}
+
+.image-info[inherit-scope] {
+	display: flex;
+	align-items: center;
+}
+
+.image-info__img icon[inherit-scope] {
+	margin-right: 15px;
+	width: 20px;
+  height: 20px;
+	border-radius: 50px;
+	border: 3px solid #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+  img[inherit-scope] {
+    border-radius: 50%;
+    width: 50px;
+  }

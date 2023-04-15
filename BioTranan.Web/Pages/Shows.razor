@@ -1,0 +1,64 @@
+@page "/"
+@inherits ShowsBase
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BioTranan</title>
+    <link rel="stylesheet" href="Shows.razor.css" />
+</head>
+<header></header>
+
+<body style="background-color:#f9f9f9d0">
+    @if (ShowsSchemas == null)
+    {
+        <h3>Loading shows...</h3>
+    }
+    else
+    {
+        <br>
+        <br>
+            <table class="table">
+                <tbody>
+        @foreach (var show in ShowsSchemas)
+        {
+                    <tr>
+                        <td>
+                            <div class="image-info">
+                                <div class="image-info__img">
+                                    <img src="-website-favicon-color.png" alt="Movie picture">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="date-info__basic">
+                                <h5 class="mb-0">@show.ShowStartTime.ToString("d MMMM")</h5>
+                                <p class="text-muted mb-0">@show.ShowStartTime.ToString("HH:mm")</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="movie-info__basic">
+                                <h5 class="mb-0" href="/MovieDetails/@show.ShowId">@show.MovieTitle</h5>
+                                <p class="text-muted mb-0">
+                                    @show.SpokenLanguage @show.Subtitles @show.MovieGenre | 
+                                    @show.ShowDurationHours tim @show.ShowDurationMinutes min | 
+                                    @show.MovieAgeRestriction</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>@show.AvailableSeats kvar av @show.SalonSeats</p>
+                        </td>
+                        <td>
+                            <a href="/MovieDetails/@show.ShowId">
+							    <span class="btn btn-success">Visa detaljer</span>
+                            </a>
+						</td>
+                    </tr>
+        }
+                    </tbody>
+            </table>
+    }
+</body>
+
+</html>
