@@ -2,6 +2,7 @@ using BioTranan.Core.Repositories.Contracts;
 using BioTranan.Core.Dto;
 using BioTranan.Core.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using BioTranan.Core.ViewModels;
 
 namespace BioTranan.Api.Controllers;
 

@@ -1,5 +1,5 @@
 using BioTranan.Core.Entities;
-using BioTranan.Core.Dto;
+using BioTranan.Core.ViewModels;
 
 namespace BioTranan.Core.Extensions;
 
