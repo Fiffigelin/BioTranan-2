@@ -21,7 +21,7 @@ public class BookingRepository : IBookingRepository
     public async Task<Booking> CreateBooking(CreateBookingDto createBooking)
     {
         var show = _context.Shows.FirstOrDefault(s => s.Id == createBooking.ShowId);
-        if (show == null) return null!;
+        if (show == null) return null;
 
         var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Email == createBooking.UserEmail);
         if (existingUser == null)
@@ -53,7 +53,7 @@ public class BookingRepository : IBookingRepository
     {
         var result = await _context.Bookings.ToListAsync();
 
-        if (result == null) return null!;
+        if (result == null) return null;
 
         return result;
     }
@@ -62,7 +62,13 @@ public class BookingRepository : IBookingRepository
     {
         var result = await _context.Bookings.FindAsync(id);
         var show = await _context.Shows.FindAsync(result!.ShowId);
+        var salon = await _context.Salons.FindAsync(show.SalonId);
+        var movie = await _context.Movies.FindAsync(show.MovieId);
+
         result.Show = show;
+        result.Show.Salon = salon;
+        result.Show.Movie = movie;
+        await _context.SaveChangesAsync();
 
         return result;
     }
@@ -71,7 +77,7 @@ public class BookingRepository : IBookingRepository
     {
         var result = await _context.Bookings.Where(s => s.ShowId == id).ToListAsync();
 
-        if (result == null) return null!;
+        if (result == null) return null;
 
         return result;
     }

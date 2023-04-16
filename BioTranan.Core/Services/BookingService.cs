@@ -16,12 +16,11 @@ public class BookingService : IBookingService
 
     public async Task CreateBooking(CreateBookingDto createBooking)
     {
-        // var response = await this._client.PostAsJsonAsync<CreateBookingDto>("api/Booking", createBooking);
         try
         {
             var json = JsonSerializer.Serialize(createBooking);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
-            var response = await _client.PostAsync("api/Booking", content); // Skicka HTTP POST-förfrågan till API:et
+            var response = await _client.PostAsync("api/Booking", content);
         }
         catch (System.Exception)
         {
