@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BioTranan.Core\BioTranan.Core.csproj" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
   </ItemGroup>
 
 </Project>

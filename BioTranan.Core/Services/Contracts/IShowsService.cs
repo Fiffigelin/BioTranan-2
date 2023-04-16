@@ -5,5 +5,5 @@ namespace BioTranan.Core.Services.Contracts;
 public interface IShowsService
 {
     Task<IEnumerable<ShowDetailsDto>> GetSchemas();
-    // Task<MovieDetailsDto> GetMovieDetails(int id);
+    Task<MovieDetailsDto> GetMovieDetails(int id);
 }

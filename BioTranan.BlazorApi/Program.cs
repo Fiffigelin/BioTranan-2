@@ -2,6 +2,7 @@ using BioTranan.Core.Repositories;
 using BioTranan.Core.Repositories.Contracts;
 using BioTranan.Core.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,8 +23,18 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix = "";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "BioTranan Blazor-API v1");
+            });
 }
+
+app.UseCors(policy =>
+    policy.WithOrigins("http://localhost:5293")
+    .AllowAnyMethod()
+    .WithHeaders(HeaderNames.ContentType)
+    );
 
 app.UseHttpsRedirection();
 

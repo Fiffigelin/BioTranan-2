@@ -1,0 +1,9 @@
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.csproj.AssemblyReference.cache
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.AssemblyInfoInputs.cache
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.AssemblyInfo.cs
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.csproj.CoreCompileInputs.cache
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.RazorAssemblyInfo.cache
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.RazorAssemblyInfo.cs

@@ -1,29 +1,26 @@
-using BioTranan.Core.Data;
 using BioTranan.Core.ViewModels;
 using BioTranan.Core.Services.Contracts;
-using BioTranan.Core.Repositories.Contracts;
-using BioTranan.Core.Extensions;
-using Microsoft.EntityFrameworkCore;
+using System.Net.Http.Json;
 
 namespace BioTranan.Core.Services;
 
 public class ShowsService : IShowsService
 {
-    private readonly BioTrananDbContext _context;
+    private readonly HttpClient _client;
 
-    public ShowsService(BioTrananDbContext context)
+    public ShowsService(HttpClient client)
     {
-        _context = context;
+        _client = client;
+    }
+
+    public async Task<MovieDetailsDto> GetMovieDetails(int id)
+    {
+        var response = await this._client.GetAsync($"api/Schemas/{id}");
+        return await response.Content.ReadFromJsonAsync<MovieDetailsDto>();
     }
 
     public async Task<IEnumerable<ShowDetailsDto>> GetSchemas()
     {
-        var movies = await _context.Movies.ToListAsync();
-        var salons = await _context.Salons.ToListAsync();
-        var shows = await _context.Shows.ToListAsync();
-        var bookings = await _context.Bookings.ToListAsync();
-
-        var schemas = shows.ConvertToDto(movies, salons, bookings);
-        return schemas;
+        return await this._client.GetFromJsonAsync<IEnumerable<ShowDetailsDto>>("api/Schemas");
     }
 }

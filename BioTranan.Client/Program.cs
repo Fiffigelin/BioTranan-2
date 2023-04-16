@@ -25,12 +25,6 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapBlazorHub(); // Lägg till SignalR-middleware för Blazor
-    endpoints.MapFallbackToPage("/");
-});
-
 app.UseStaticFiles();
 
 app.UseRouting();

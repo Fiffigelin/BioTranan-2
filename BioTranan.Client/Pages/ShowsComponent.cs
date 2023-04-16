@@ -5,10 +5,11 @@ using Microsoft.AspNetCore.Components;
 public class ShowsComponent : ComponentBase
 {
     [Inject]
-    public IShowsService? ShowsService { get; set; }
-    public IEnumerable<ShowDetailsDto>? Schemas { get; set; }
+    public IShowsService ShowsService { get; set; }
+    public IEnumerable<ShowDetailsDto> Schemas { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
+        Schemas = await ShowsService.GetSchemas();
     }
 }
