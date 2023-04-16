@@ -3,6 +3,7 @@ using BioTranan.Core.Dto;
 using BioTranan.Core.Repositories.Contracts;
 using BioTranan.Core.ViewModels;
 using Microsoft.AspNetCore.Components;
+#nullable disable
 
 namespace BioTranan.Client.Pages;
 
@@ -25,7 +26,6 @@ public class MovieDetailsBase : ComponentBase
 
     protected async Task AddBooking_Click(CreateBookingDto createBooking)
     {
-        createBooking.ShowId = Id;
         try
         {
             await BookingService.CreateBooking(createBooking);

@@ -1,5 +1,6 @@
 @page "/MovieDetails/{Id:int}"
 @inherits MovieDetailsBase
+@inject NavigationManager NavigationManager
 
 <!DOCTYPE html>
 <html>
@@ -69,7 +70,7 @@
             </div>
             <div class="right-column">
                 <h2>@MovieDetails.AvailableSeats kvar av @MovieDetails.SalonSeats</h2>
-                <form class="booking-form" action="/action_page.php">
+                <form @onsubmit="RedirectOnBooking" class="booking-form" action="/action_page.php">
                     <input type="email" id="email" name="email" placeholder="Din email..." @bind="userEmail" required>
                     <label for="seats">
                         <p>@ticketQty x @MovieDetails.PricePerTicket.ToString("0.00") kr| @(ticketQty *
@@ -77,8 +78,7 @@
                         </p>
                     </label>
                     <input type="number" id="seats" name="seats" @bind="ticketQty" min="1" max="8" required>
-                    <input type="submit" value="Boka"
-                    @onclick="(() => AddBooking_Click(new CreateBookingDto { AmountSeat = ticketQty, UserEmail = userEmail }))">
+                    <input button type="submit" value="Boka">
                 </form>
             </div>
         </div>
@@ -91,31 +91,38 @@
     public string userEmail;
     public int ticketQty;
 
-    private void SubmitBooking()
+    private async void RedirectOnBooking()
     {
-        if (string.IsNullOrWhiteSpace(userEmail) || !IsValidEmail(userEmail))
-        {
-            return;
-        }
+        var booking = new CreateBookingDto
+            {
+                ShowId = @MovieDetails.ShowId,
+                AmountSeat = ticketQty,
+                UserEmail = userEmail,
+            };
 
-        if (ticketQty <= 0 || ticketQty > 8)
-        {
-            return;
-        }
+        var code = BookingCode();
+        booking.BookingCode = code;
+
+        await AddBooking_Click(booking);
+
+        NavigationManager.NavigateTo($"/bookingconfirmation/{code}", true);
     }
 
-    private bool IsValidEmail(string email)
+    private string BookingCode()
     {
-        try
+        string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        Random random = new Random();
+        char[] result = new char[6];
+
+        for (int i = 0; i < 6; i++)
         {
-            var addr = new System.Net.Mail.MailAddress(email);
-            return addr.Address == email;
+            result[i] = chars[random.Next(chars.Length)];
         }
-        catch
-        {
-            return false;
-        }
+
+        return new string(result);
     }
+
+
 }
 
 

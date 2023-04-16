@@ -17,24 +17,12 @@ public class BookingService : IBookingService
 
     public async Task CreateBooking(CreateBookingDto createBooking)
     {
-        await this._client.PostAsJsonAsync("api/Booking", createBooking);
-
+        var booking = await this._client.PostAsJsonAsync("api/Booking", createBooking);
     }
 
-    public async Task<Booking> GetBooking(int id)
+    public async Task<Booking> GetBookingById(int id)
     {
-        try
-        {
-            var response = await this._client.GetAsync($"api/Booking/{id}");
-            response.EnsureSuccessStatusCode();
-            var json = await response.Content.ReadAsStringAsync();
-            var booking = JsonSerializer.Deserialize<Booking>(json, new JsonSerializerOptions { });
-
-            return booking;
-        }
-        catch (Exception ex)
-        {
-            throw new Exception("Ett fel inträffade vid hämtning av bokning.", ex);
-        }
+        var response = await this._client.GetAsync($"api/Booking/{id}");
+        return await response.Content.ReadFromJsonAsync<Booking>();
     }
 }

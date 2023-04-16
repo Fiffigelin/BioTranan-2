@@ -9,7 +9,8 @@
       "BioTranan.Api/1.0.0": {
         "dependencies": {
           "BioTranan.Core": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "Swashbuckle.AspNetCore.Annotations": "6.5.0"
         },
         "runtime": {
           "BioTranan.Api.dll": {}

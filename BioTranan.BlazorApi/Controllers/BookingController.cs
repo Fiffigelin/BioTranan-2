@@ -23,6 +23,7 @@ public class BookingController : ControllerBase
         if (IsSeatAvailable == false) return Conflict();
 
         var result = await this._bookingRepository.CreateBooking(createBookingDto);
+        await this._bookingRepository.GetBookingById(result.Id);
 
         return Ok(result);
     }

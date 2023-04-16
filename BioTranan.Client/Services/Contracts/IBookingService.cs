@@ -6,6 +6,6 @@ namespace BioTranan.Client.Services.Contracts;
 public interface IBookingService
 {
     Task CreateBooking(CreateBookingDto createBooking);
-    Task<Booking> GetBooking(int id);
+    Task<Booking> GetBookingById(int id);
 }
 

@@ -43,7 +43,7 @@ Utöver detta vill Bio Tranan, som drivs av erfarna utvecklare, ha ett REST API 
 - [X] Lägga till nya visningar i schemat
 - [ ] Hämta hem schemat för alla **kommande** visningar
 - [X] Lista alla reservationer
-- [ ] Lista alla reservationer för en viss visning
+- [X] Lista alla reservationer för en viss visning
 
 Regler för systemet:
 - [X] En film får bara visas ett visst antal gånger. Det skall alltså inte gå att lägga till en film i schemat för visningar, om den redan visats max antal gånger.

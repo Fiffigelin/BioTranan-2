@@ -123,7 +123,7 @@
     padding: 0;
   }
   body[b-mduvu4wgh4], html[b-mduvu4wgh4] {
-    min-width: 100%;
+    min-width: 65%;
     min-height: 100vh;
   }
   body[b-mduvu4wgh4] {
@@ -161,9 +161,10 @@
     margin-left: -20px;
   }
   .card.left[b-mduvu4wgh4], .card.right[b-mduvu4wgh4] {
-    height: 600px;
+    height: 450px;
     z-index: 1;
     width: 350px;
+    margin-left: 600px;
   }
   
   .card.center[b-mduvu4wgh4] {

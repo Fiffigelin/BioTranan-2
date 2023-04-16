@@ -39,9 +39,8 @@ public class BookingRepository : IBookingRepository
             AmountSeat = createBooking.AmountSeat,
             TotalPrice = show.Price * createBooking.AmountSeat,
             UserEmail = existingUser.Email,
+            BookingCode = createBooking.BookingCode
         };
-
-        result.BookingCode = Guid.NewGuid().ToString("N");
 
         await _context.Bookings.AddAsync(result);
         await _context.SaveChangesAsync();
