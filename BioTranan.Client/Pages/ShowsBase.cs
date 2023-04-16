@@ -1,6 +1,7 @@
 using BioTranan.Core.ViewModels;
 using BioTranan.Core.Services.Contracts;
 using Microsoft.AspNetCore.Components;
+#nullable disable
 
 namespace BioTranan.Client.Pages;
 
