@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 using BioTranan.Client.Data;
 using BioTranan.Core.Services.Contracts;
 using BioTranan.Core.Services;
@@ -8,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://localhost:5133") });
 builder.Services.AddScoped<IShowsService, ShowsService>();
+builder.Services.AddScoped<IBookingService, BookingService>();
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();

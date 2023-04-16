@@ -10,6 +10,7 @@ public class BookingRepository : IBookingRepository
 {
     private readonly BioTrananDbContext _context;
     private readonly IUserRepository _userRepository;
+    private readonly IShowRepository _showRepository;
 
     public BookingRepository(BioTrananDbContext context, IUserRepository userRepository)
     {
@@ -52,6 +53,15 @@ public class BookingRepository : IBookingRepository
         var result = await _context.Bookings.ToListAsync();
 
         if (result == null) return null!;
+
+        return result;
+    }
+
+    public async Task<Booking> GetBookingById(int id)
+    {
+        var result = await _context.Bookings.FindAsync(id);
+        var show = await _context.Shows.FindAsync(result.ShowId);
+        result.Show = show;
 
         return result;
     }

@@ -1,0 +1,123 @@
+@page "/MovieDetails/{Id:int}"
+@inherits MovieDetailsBase
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-image {
+            height: 400px;
+            background-image: url(https://fourfriends.se/wp-content/uploads/2018/10/neva-masquerade-kitten-fourfriends.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-start;
+            text-align: left;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    @if (MovieDetails == null)
+    {
+        <h3 color="black">Loading movie....</h3>
+    }
+    else
+    {
+        <div class="hero-image">
+            <div>
+                <h1>@MovieDetails.MovieTitle</h1>
+                <p>@MovieDetails.SpokenLanguage @MovieDetails.Subtitles @MovieDetails.MovieGenre |
+                    @MovieDetails.ShowDurationHours tim @MovieDetails.ShowDurationMinutes min |
+                    @MovieDetails.MovieAgeRestriction</p>
+            </div>
+        </div>
+        <div class="columns-container">
+            <div class="left-column">
+                <div class="movie-description">
+                    <p>Regissör: @MovieDetails.MovieDirector</p>
+                    <p>Skådespelare: [Skådespelares namn]</p>
+                    <p>Utgivningsår: Något år</p>
+                </div>
+            </div>
+            <div class="middle-column">
+                <div class="movie-plot">
+                    <p>@MovieDetails.MovieDescription</p>
+                </div>
+            </div>
+            <div class="right-column-2">
+                <div class="right-2-item-1">
+                    <h2>@MovieDetails.SalonName</h2>
+                    <h3>@MovieDetails.ShowStartTime.ToString("d MMMM")</h3>
+                    <h1>@MovieDetails.ShowStartTime.ToString("HH:mm")</h1>
+                </div>
+            </div>
+            <div class="right-column">
+                <h2>@MovieDetails.AvailableSeats kvar av @MovieDetails.SalonSeats</h2>
+                <form class="booking-form" action="/action_page.php">
+                    <input type="email" id="email" name="email" placeholder="Din email..." @bind="userEmail" required>
+                    <label for="seats">
+                        <p>@ticketQty x @MovieDetails.PricePerTicket.ToString("0.00") kr| @(ticketQty *
+                        MovieDetails.PricePerTicket) kr
+                        </p>
+                    </label>
+                    <input type="number" id="seats" name="seats" @bind="ticketQty" min="1" max="8" required>
+                    <input type="submit" value="Boka"
+                    @onclick="(() => AddBooking_Click(new CreateBookingDto { AmountSeat = ticketQty, UserEmail = userEmail }))">
+                </form>
+            </div>
+        </div>
+    }
+</body>
+
+</html>
+
+@code {
+    public string userEmail;
+    public int ticketQty;
+
+    private void SubmitBooking()
+    {
+        if (string.IsNullOrWhiteSpace(userEmail) || !IsValidEmail(userEmail))
+        {
+            return;
+        }
+
+        if (ticketQty <= 0 || ticketQty > 8)
+        {
+            return;
+        }
+    }
+
+    private bool IsValidEmail(string email)
+    {
+        try
+        {
+            var addr = new System.Net.Mail.MailAddress(email);
+            return addr.Address == email;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+}
+
+
+
+

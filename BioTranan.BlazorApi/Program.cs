@@ -17,6 +17,8 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddDbContext<BioTrananDbContext>(options => options.UseSqlite("Data Source = ../BioTranan.Core/BioTrananDb.db"));
 builder.Services.AddScoped<IMovieDetailsRepository, MovieDetailsRepository>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 

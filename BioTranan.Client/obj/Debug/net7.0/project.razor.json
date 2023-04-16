@@ -13,80 +13,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1146065014,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.Pages.FetchData",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.Pages.FetchData",
-          "Common.TypeNamespace": "BioTranan.Client.Pages",
-          "Common.TypeNameIdentifier": "FetchData"
-        }
-      },
-      {
-        "HashCode": -1895753964,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.Pages.FetchData",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BioTranan.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.Pages.FetchData",
-          "Common.TypeNamespace": "BioTranan.Client.Pages",
-          "Common.TypeNameIdentifier": "FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1681782681,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.Pages.Counter",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.Pages.Counter",
-          "Common.TypeNamespace": "BioTranan.Client.Pages",
-          "Common.TypeNameIdentifier": "Counter"
-        }
-      },
-      {
-        "HashCode": 605754983,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.Pages.Counter",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BioTranan.Client.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.Pages.Counter",
-          "Common.TypeNamespace": "BioTranan.Client.Pages",
-          "Common.TypeNameIdentifier": "Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -913994158,
         "Kind": "Components.Component",
         "Name": "BioTranan.Client.Pages.ShowsBase",
@@ -124,43 +50,6 @@
         }
       },
       {
-        "HashCode": 650044695,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.Pages.Index",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.Pages.Index",
-          "Common.TypeNamespace": "BioTranan.Client.Pages",
-          "Common.TypeNameIdentifier": "Index"
-        }
-      },
-      {
-        "HashCode": -362204453,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.Pages.Index",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BioTranan.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.Pages.Index",
-          "Common.TypeNamespace": "BioTranan.Client.Pages",
-          "Common.TypeNameIdentifier": "Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 234465496,
         "Kind": "Components.Component",
         "Name": "BioTranan.Client.Pages.Shows",
@@ -194,6 +83,124 @@
           "Common.TypeName": "BioTranan.Client.Pages.Shows",
           "Common.TypeNamespace": "BioTranan.Client.Pages",
           "Common.TypeNameIdentifier": "Shows",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 660155433,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.Pages.MovieDetailsBase",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MovieDetailsBase"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.Pages.MovieDetailsBase",
+          "Common.TypeNamespace": "BioTranan.Client.Pages",
+          "Common.TypeNameIdentifier": "MovieDetailsBase"
+        }
+      },
+      {
+        "HashCode": 593076494,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.Pages.MovieDetailsBase",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BioTranan.Client.Pages.MovieDetailsBase"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.Pages.MovieDetailsBase",
+          "Common.TypeNamespace": "BioTranan.Client.Pages",
+          "Common.TypeNameIdentifier": "MovieDetailsBase",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1062060954,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.Pages.MovieDetails",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MovieDetails"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.Pages.MovieDetails",
+          "Common.TypeNamespace": "BioTranan.Client.Pages",
+          "Common.TypeNameIdentifier": "MovieDetails"
+        }
+      },
+      {
+        "HashCode": -1329682916,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.Pages.MovieDetails",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BioTranan.Client.Pages.MovieDetails"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.Int32"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.Pages.MovieDetails",
+          "Common.TypeNamespace": "BioTranan.Client.Pages",
+          "Common.TypeNameIdentifier": "MovieDetails",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -19074,11 +19081,6 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
@@ -19086,11 +19088,6 @@
     {
       "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\App.razor",
       "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
       "FileKind": "component"
     },
     {
@@ -19109,6 +19106,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\Pages\\MovieDetails.razor",
+      "TargetPath": "Pages\\MovieDetails.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
@@ -19116,11 +19118,6 @@
     {
       "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\Pages\\Shows.razor",
       "TargetPath": "Pages\\Shows.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
       "FileKind": "component"
     }
   ],

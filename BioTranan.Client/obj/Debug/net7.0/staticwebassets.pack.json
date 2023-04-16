@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BioTranan.Client.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\wwwroot\\-website-favicon-color.png",
+      "PackagePath": "staticwebassets\\-website-favicon-color.png"
+    },
+    {
       "Id": "C:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\wwwroot\\bio-tranan-high-resolution-logo-white-on-transparent-background.png",
       "PackagePath": "staticwebassets\\bio-tranan-high-resolution-logo-white-on-transparent-background.png"
     },

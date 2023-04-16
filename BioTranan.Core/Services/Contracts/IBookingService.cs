@@ -1,10 +1,9 @@
-// using BioTranan.Core.Dto;
-// using BioTranan.Core.Entities;
+using BioTranan.Core.Dto;
 
-// namespace BioTranan.Core.Services.Contracts;
+namespace BioTranan.Core.Services.Contracts;
 
-// public interface IBookingService
-// {
-//     Task<Booking> CreateBooking(CreateBookingDto createBooking);
-// }
+public interface IBookingService
+{
+    Task CreateBooking(CreateBookingDto createBooking);
+}
 
