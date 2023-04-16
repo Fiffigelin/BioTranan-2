@@ -3,6 +3,7 @@ using BioTranan.Core.Entities;
 using BioTranan.Core.Data;
 using BioTranan.Core.Dto;
 using Microsoft.EntityFrameworkCore;
+#nullable disable
 
 namespace BioTranan.Core.Repositories;
 

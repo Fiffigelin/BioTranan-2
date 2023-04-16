@@ -1,6 +1,7 @@
 using BioTranan.Core.ViewModels;
 using BioTranan.Core.Services.Contracts;
 using System.Net.Http.Json;
+#nullable disable
 
 namespace BioTranan.Core.Services;
 

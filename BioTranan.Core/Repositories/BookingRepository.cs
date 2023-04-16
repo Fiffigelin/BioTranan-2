@@ -3,6 +3,7 @@ using BioTranan.Core.Entities;
 using BioTranan.Core.Repositories.Contracts;
 using BioTranan.Core.Dto;
 using Microsoft.EntityFrameworkCore;
+#nullable disable
 
 namespace BioTranan.Core.Repositories;
 
@@ -60,7 +61,7 @@ public class BookingRepository : IBookingRepository
     public async Task<Booking> GetBookingById(int id)
     {
         var result = await _context.Bookings.FindAsync(id);
-        var show = await _context.Shows.FindAsync(result.ShowId);
+        var show = await _context.Shows.FindAsync(result!.ShowId);
         result.Show = show;
 
         return result;

@@ -1,5 +1,6 @@
 using BioTranan.Core.Entities;
 using Microsoft.EntityFrameworkCore;
+#nullable disable
 
 namespace BioTranan.Core.Data;
 

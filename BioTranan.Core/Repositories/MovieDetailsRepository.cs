@@ -2,6 +2,7 @@ using BioTranan.Core.Data;
 using BioTranan.Core.Entities;
 using BioTranan.Core.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore;
+#nullable disable
 
 namespace BioTranan.Core.Repositories;
 

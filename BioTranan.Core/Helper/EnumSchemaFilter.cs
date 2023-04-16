@@ -2,6 +2,7 @@ using System.Runtime.Serialization;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
+#nullable disable
 
 namespace BioTranan.Core.Helper;
 
