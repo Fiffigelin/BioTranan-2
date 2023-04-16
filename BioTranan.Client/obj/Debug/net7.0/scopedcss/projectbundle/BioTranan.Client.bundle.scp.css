@@ -1,0 +1,131 @@
+/* _content/BioTranan.Client/Pages/Shows.razor.rz.scp.css */
+body[inherit-scope] {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-content[inherit-scope] {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.table[inherit-scope] {
+	border-spacing: 0 15px;
+	border-collapse: separate;
+}
+.table thead tr th[inherit-scope],
+.table thead tr td[inherit-scope],
+.table tbody tr th[inherit-scope],
+.table tbody tr td[inherit-scope] {
+	vertical-align: middle;
+	border: none;
+}
+.table thead tr th:nth-last-child(1)[inherit-scope],
+.table thead tr td:nth-last-child(1)[inherit-scope],
+.table tbody tr th:nth-last-child(1)[inherit-scope],
+.table tbody tr td:nth-last-child(1)[inherit-scope] {
+	text-align: center;
+}
+.table tbody tr[inherit-scope] {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+.table tbody tr td[inherit-scope] {
+	background: #fff;
+}
+.table tbody tr td:nth-child(1)[inherit-scope] {
+	border-radius: 5px 0 0 5px;
+}
+.table tbody tr td:nth-last-child(1)[inherit-scope] {
+	border-radius: 0 5px 5px 0;
+}
+
+.image-info[inherit-scope] {
+	display: flex;
+	align-items: center;
+}
+
+.image-info__img icon[inherit-scope] {
+	margin-right: 15px;
+	width: 20px;
+  height: 20px;
+	border-radius: 50px;
+	border: 3px solid #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+  img[inherit-scope] {
+    border-radius: 50%;
+    width: 50px;
+  }
+/* _content/BioTranan.Client/Shared/MainLayout.razor.rz.scp.css */
+.page[b-6vhs9ed8b4] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-6vhs9ed8b4] {
+    flex: 1;
+}
+
+.sidebar[b-6vhs9ed8b4] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-6vhs9ed8b4] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-6vhs9ed8b4]  a, .top-row .btn-link[b-6vhs9ed8b4] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-6vhs9ed8b4] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-6vhs9ed8b4] {
+        display: none;
+    }
+
+    .top-row.auth[b-6vhs9ed8b4] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-6vhs9ed8b4], .top-row .btn-link[b-6vhs9ed8b4] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-6vhs9ed8b4] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-6vhs9ed8b4] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-6vhs9ed8b4] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-6vhs9ed8b4], article[b-6vhs9ed8b4] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}

@@ -9,5 +9,9 @@
   <ItemGroup>
     <ProjectReference Include="..\BioTranan.Core\BioTranan.Core.csproj" />
   </ItemGroup>
-  
+
+  <ItemGroup>
+    <None Update="Pages/Shows.razor.css" CssScope="inherit-scope" />
+  </ItemGroup>
+
 </Project>

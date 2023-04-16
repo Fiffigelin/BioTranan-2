@@ -1,5 +1,5 @@
 @page "/"
-@inherits ShowsComponent
+@inherits ShowsBase
 
 <!DOCTYPE html>
 <html>
@@ -11,7 +11,7 @@
 <header></header>
 
 <body style="background-color:#f9f9f9d0">
-    @if (Schemas == null)
+    @if (ShowsSchemas == null)
     {
         <h3>Loading shows...</h3>
     }
@@ -21,7 +21,7 @@
         <br>
             <table class="table">
                 <tbody>
-        @foreach (var show in Schemas)
+        @foreach (var show in ShowsSchemas)
         {
                     <tr>
                         <td>
