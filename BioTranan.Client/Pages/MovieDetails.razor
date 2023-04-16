@@ -88,9 +88,34 @@
 </html>
 
 @code {
-#nullable disable
     public string userEmail;
     public int ticketQty;
+
+    private void SubmitBooking()
+    {
+        if (string.IsNullOrWhiteSpace(userEmail) || !IsValidEmail(userEmail))
+        {
+            return;
+        }
+
+        if (ticketQty <= 0 || ticketQty > 8)
+        {
+            return;
+        }
+    }
+
+    private bool IsValidEmail(string email)
+    {
+        try
+        {
+            var addr = new System.Net.Mail.MailAddress(email);
+            return addr.Address == email;
+        }
+        catch
+        {
+            return false;
+        }
+    }
 }
 
 

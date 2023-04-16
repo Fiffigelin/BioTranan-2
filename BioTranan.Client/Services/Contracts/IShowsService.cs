@@ -1,6 +1,6 @@
 using BioTranan.Core.ViewModels;
 
-namespace BioTranan.Core.Services.Contracts;
+namespace BioTranan.Client.Services.Contracts;
 
 public interface IShowsService
 {

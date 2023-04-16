@@ -1,0 +1,46 @@
+@page "/bookingconfirmation/{showId}/{bookingId}"
+@inherits MovieDetailsBase
+<MovieDetailsBase OnBookingCreated="HandleBookingCreated" />
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokningsbekräftelse</title>
+    <link rel="stylesheet" href="Receipt.razor.css" />
+</head>
+
+<body>
+    <div class="card left">
+        <div class="container">
+            <img src="favicon.png">
+            <h2>Bokningsbekräftelse</h2>
+            <h3>@booking.Show.Movie.Title</h3>
+            <p>@booking.Show.StartTime.ToString("d, MMMM") | @booking.Show.StartTime.ToString("HH:mm")</p>
+            <p>@booking.AmountSeat</p>
+            <br>
+            <h1>@booking.BookingCode</h1>
+        </div>
+    </div>
+</body>
+
+</html>
+
+@code {
+    private Booking booking;
+    [Parameter] public string Email { get; set; }
+    [Parameter] public int Seats { get; set; }
+
+    protected override void OnInitialized()
+    {
+        // Gör något med Email och Seats, t.ex. utför logik baserat på dessa värden
+    }
+
+    private async Task HandleBookingCreated(Booking booking)
+    {
+        this.booking = booking;
+    }
+}

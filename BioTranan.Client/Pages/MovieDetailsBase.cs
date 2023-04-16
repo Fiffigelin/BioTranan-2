@@ -1,8 +1,8 @@
+using BioTranan.Client.Services.Contracts;
 using BioTranan.Core.Dto;
-using BioTranan.Core.Services.Contracts;
+using BioTranan.Core.Repositories.Contracts;
 using BioTranan.Core.ViewModels;
 using Microsoft.AspNetCore.Components;
-#nullable disable
 
 namespace BioTranan.Client.Pages;
 
@@ -15,9 +15,8 @@ public class MovieDetailsBase : ComponentBase
     public IShowsService ShowsService { get; set; }
     [Inject]
     public IBookingService BookingService { get; set; }
+    public IBookingRepository BookingRepository { get; set; }
     public MovieDetailsDto MovieDetails { get; set; }
-    [Inject]
-    public NavigationManager NavigationManager { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -30,7 +29,6 @@ public class MovieDetailsBase : ComponentBase
         try
         {
             await BookingService.CreateBooking(createBooking);
-            // NavigationManager.NavigateTo("/");
         }
         catch (System.Exception)
         {

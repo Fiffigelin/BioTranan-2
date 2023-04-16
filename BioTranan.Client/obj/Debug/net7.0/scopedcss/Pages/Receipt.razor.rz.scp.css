@@ -1,0 +1,117 @@
+*[b-mduvu4wgh4] {
+    margin: 0;
+    padding: 0;
+  }
+  body[b-mduvu4wgh4], html[b-mduvu4wgh4] {
+    min-width: 100%;
+    min-height: 100vh;
+  }
+  body[b-mduvu4wgh4] {
+    background: #f9f9f9d0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  h2[b-mduvu4wgh4], h5[b-mduvu4wgh4] {
+    color: #2F463D;
+  }
+  
+  h2[b-mduvu4wgh4], h5[b-mduvu4wgh4], h6[b-mduvu4wgh4], a[b-mduvu4wgh4], button[b-mduvu4wgh4] {
+    font-family: Montserrat;
+  }
+  
+  .card[b-mduvu4wgh4] {
+    background-color: #fff;
+    box-shadow: 0 40px 40px -20px #2e8a64;
+    width: 370px;
+    height: 650px;
+    margin: 70px 0;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .card.left[b-mduvu4wgh4] {
+    margin-right: -20px;
+  }
+  
+  .card.right[b-mduvu4wgh4] {
+    margin-left: -20px;
+  }
+  .card.left[b-mduvu4wgh4], .card.right[b-mduvu4wgh4] {
+    height: 600px;
+    z-index: 1;
+    width: 350px;
+  }
+  
+  .card.center[b-mduvu4wgh4] {
+     z-index: 9;
+     width: 370px;
+  }
+  .card:hover[b-mduvu4wgh4] {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  #close-button[b-mduvu4wgh4] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+  }
+  .container[b-mduvu4wgh4] {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box; /*this keeps the box the same size no matter what is put inside and how wide the view screen is.*/
+    padding: 55px 45px;/*border-box kept the outside the same and squished the inside instead of the other way around.*/
+    }
+  .container > h2[b-mduvu4wgh4] {
+    margin: 20px 0 10px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .container > p[b-mduvu4wgh4] {
+   font-family: Ubuntu;
+   font-size: 14px;
+   line-height: 20px;
+   color: #828282;
+  }
+  
+  .menu-item[b-mduvu4wgh4] {
+    display: flex;
+    align-items: center;
+    background-color: #F0FFF5;
+    border-radius: 5px;
+    margin: 40px 0 30px;
+  }
+  .food-name-price[b-mduvu4wgh4] {
+    width: 50%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .food-name-price h5[b-mduvu4wgh4] {
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .food-name-price h6[b-mduvu4wgh4] {
+   font-weight: 500;
+    color: #7A8F85;
+    font-weight: 12px;
+  }
+  .menu-item a[b-mduvu4wgh4] {
+    color: #467A66;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .right[b-mduvu4wgh4], .left[b-mduvu4wgh4] {
+    display: none;
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .right[b-mduvu4wgh4], .left[b-mduvu4wgh4] {
+      display: block;
+    }
+  }

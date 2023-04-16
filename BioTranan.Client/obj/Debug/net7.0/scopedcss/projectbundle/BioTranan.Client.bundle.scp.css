@@ -1,125 +1,243 @@
 /* _content/BioTranan.Client/Pages/MovieDetails.razor.rz.scp.css */
 .hero-overlay[b-m6j37qtx4h] {
-  position: absolute;
-  top: 20px; /* Justera vertikal position */
-  left: 20px; /* Justera horisontell position */
-}
-
-.hero-overlay img[b-m6j37qtx4h] {
-  width: 100px; /* Justera bildens bredd */
-  height: 600px;
-  height: auto; /* Så att höjden anpassas proportionellt */
-}
-
-  .columns-container[b-m6j37qtx4h] {
-      display: flex;
-      justify-content: space-between;
-      margin: 20px;
-      flex-wrap: nowrap;
-  }
-
-  .left-column[b-m6j37qtx4h] {
-      width: 300px;
-      padding-left: 10px;
-      flex-basis: 25%;
+    position: absolute;
+    top: 20px; /* Justera vertikal position */
+    left: 20px; /* Justera horisontell position */
   }
   
-  .middle-column[b-m6j37qtx4h] {
-      flex-basis: 50%;
-      flex-grow: 4;
-      text-align: left;
+  .hero-overlay img[b-m6j37qtx4h] {
+    width: 100px; /* Justera bildens bredd */
+    height: 600px;
+    height: auto; /* Så att höjden anpassas proportionellt */
   }
   
-  .right-column-2[b-m6j37qtx4h] {
-      display: flex;
-      flex-direction: column;
-      width: 200px;
-      text-align: left;
+    .columns-container[b-m6j37qtx4h] {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        flex-wrap: nowrap;
+    }
+  
+    .left-column[b-m6j37qtx4h] {
+        width: 300px;
+        padding-left: 10px;
+        flex-basis: 25%;
+    }
+    
+    .middle-column[b-m6j37qtx4h] {
+        flex-basis: 50%;
+        flex-grow: 4;
+        text-align: left;
+    }
+    
+    .right-column-2[b-m6j37qtx4h] {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        text-align: left;
+    }
+  
+    .right-2-item-1[b-m6j37qtx4h] {
+      padding-left:20px;  
+    }
+  
+    .right-2-item-2[b-m6j37qtx4h] {
+        padding-top:100px;
+    }
+  
+    .right-column[b-m6j37qtx4h] {
+        text-align: right;
+        flex-basis: 25%;
+        width: 300px;
+    }
+  
+    .movie-description[b-m6j37qtx4h], .movie-plot[b-m6j37qtx4h] {
+        /* Stilisera filminformation och filmens handling efter behov */
+    }
+  
+    .booking-form[b-m6j37qtx4h] {
+        /* Stilisera bokningsformuläret efter behov */
+    }
+  
+    .hero-image h1[b-m6j37qtx4h] {
+        font-size: 36px;
+        margin: 0;
+        padding-left: 115px;
+    }
+  
+    .hero-image p[b-m6j37qtx4h] {
+        font-size: 18px;
+        margin: 0;
+        padding-left: 115px;
+        /* Tar bort eventuell marginal på p-elementet */
+    }
+  
+    .booking-form[b-m6j37qtx4h] {
+        margin: 20px;
+    }
+  
+    .movie-description[b-m6j37qtx4h] {
+        margin: 20px;
+    }
+  
+    .columns-container[b-m6j37qtx4h] {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+  
+    .right-column h2[b-m6j37qtx4h] {
+        margin-top: 0;
+    }
+  
+    .right-column form[b-m6j37qtx4h] {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .right-column label[b-m6j37qtx4h],
+    .right-column input[b-m6j37qtx4h] {
+        margin-bottom: 10px;
+    }
+  
+    .right-column input[type="email"][b-m6j37qtx4h],
+    .right-column input[type="number"][b-m6j37qtx4h] {
+        padding: 5px;
+        width: 100%;
+    }
+  
+    .right-column input[type="submit"][b-m6j37qtx4h] {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+  
+    .right-column input[type="submit"]:hover[b-m6j37qtx4h] {
+        background-color: #0056b3;
+    }
+/* _content/BioTranan.Client/Pages/Receipt.razor.rz.scp.css */
+*[b-mduvu4wgh4] {
+    margin: 0;
+    padding: 0;
   }
-
-  .right-2-item-1[b-m6j37qtx4h] {
-    padding-left:20px;  
+  body[b-mduvu4wgh4], html[b-mduvu4wgh4] {
+    min-width: 100%;
+    min-height: 100vh;
   }
-
-  .right-2-item-2[b-m6j37qtx4h] {
-      padding-top:100px;
+  body[b-mduvu4wgh4] {
+    background: #f9f9f9d0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
-
-  .right-column[b-m6j37qtx4h] {
-      text-align: right;
-      flex-basis: 25%;
-      width: 300px;
+  
+  h2[b-mduvu4wgh4], h5[b-mduvu4wgh4] {
+    color: #2F463D;
   }
-
-  .movie-description[b-m6j37qtx4h], .movie-plot[b-m6j37qtx4h] {
-      /* Stilisera filminformation och filmens handling efter behov */
+  
+  h2[b-mduvu4wgh4], h5[b-mduvu4wgh4], h6[b-mduvu4wgh4], a[b-mduvu4wgh4], button[b-mduvu4wgh4] {
+    font-family: Montserrat;
   }
-
-  .booking-form[b-m6j37qtx4h] {
-      /* Stilisera bokningsformuläret efter behov */
+  
+  .card[b-mduvu4wgh4] {
+    background-color: #fff;
+    box-shadow: 0 40px 40px -20px #2e8a64;
+    width: 370px;
+    height: 650px;
+    margin: 70px 0;
+    border-radius: 5px;
+    position: relative;
   }
-
-  .hero-image h1[b-m6j37qtx4h] {
-      font-size: 36px;
-      margin: 0;
-      padding-left: 115px;
+  
+  .card.left[b-mduvu4wgh4] {
+    margin-right: -20px;
   }
-
-  .hero-image p[b-m6j37qtx4h] {
-      font-size: 18px;
-      margin: 0;
-      padding-left: 115px;
-      /* Tar bort eventuell marginal på p-elementet */
+  
+  .card.right[b-mduvu4wgh4] {
+    margin-left: -20px;
   }
-
-  .booking-form[b-m6j37qtx4h] {
-      margin: 20px;
+  .card.left[b-mduvu4wgh4], .card.right[b-mduvu4wgh4] {
+    height: 600px;
+    z-index: 1;
+    width: 350px;
   }
-
-  .movie-description[b-m6j37qtx4h] {
-      margin: 20px;
+  
+  .card.center[b-mduvu4wgh4] {
+     z-index: 9;
+     width: 370px;
   }
-
-  .columns-container[b-m6j37qtx4h] {
-      display: flex;
-      justify-content: space-between;
-      margin: 20px;
+  .card:hover[b-mduvu4wgh4] {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-
-  .right-column h2[b-m6j37qtx4h] {
-      margin-top: 0;
+  #close-button[b-mduvu4wgh4] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
   }
-
-  .right-column form[b-m6j37qtx4h] {
-      display: flex;
-      flex-direction: column;
+  .container[b-mduvu4wgh4] {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box; /*this keeps the box the same size no matter what is put inside and how wide the view screen is.*/
+    padding: 55px 45px;/*border-box kept the outside the same and squished the inside instead of the other way around.*/
+    }
+  .container > h2[b-mduvu4wgh4] {
+    margin: 20px 0 10px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
   }
-
-  .right-column label[b-m6j37qtx4h],
-  .right-column input[b-m6j37qtx4h] {
-      margin-bottom: 10px;
+  .container > p[b-mduvu4wgh4] {
+   font-family: Ubuntu;
+   font-size: 14px;
+   line-height: 20px;
+   color: #828282;
   }
-
-  .right-column input[type="email"][b-m6j37qtx4h],
-  .right-column input[type="number"][b-m6j37qtx4h] {
-      padding: 5px;
-      width: 100%;
+  
+  .menu-item[b-mduvu4wgh4] {
+    display: flex;
+    align-items: center;
+    background-color: #F0FFF5;
+    border-radius: 5px;
+    margin: 40px 0 30px;
   }
-
-  .right-column input[type="submit"][b-m6j37qtx4h] {
-      padding: 10px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
+  .food-name-price[b-mduvu4wgh4] {
+    width: 50%;
+    text-align: left;
+    padding-left: 15px;
   }
-
-  .right-column input[type="submit"]:hover[b-m6j37qtx4h] {
-      background-color: #0056b3;
+  .food-name-price h5[b-mduvu4wgh4] {
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .food-name-price h6[b-mduvu4wgh4] {
+   font-weight: 500;
+    color: #7A8F85;
+    font-weight: 12px;
+  }
+  .menu-item a[b-mduvu4wgh4] {
+    color: #467A66;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .right[b-mduvu4wgh4], .left[b-mduvu4wgh4] {
+    display: none;
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .right[b-mduvu4wgh4], .left[b-mduvu4wgh4] {
+      display: block;
+    }
   }
 /* _content/BioTranan.Client/Pages/Shows.razor.rz.scp.css */
 body[inherit-scope] {
-	background: #f9f9f9;
+	background: #f9f9f9d0;
 	font-family: "Roboto", sans-serif;
 }
 

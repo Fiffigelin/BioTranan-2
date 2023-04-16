@@ -16,24 +16,24 @@ public class BookingController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<int>> PostBooking([FromBody] CreateBookingDto createBookingDto)
+    public async Task<ActionResult<Booking>> PostBooking([FromBody] CreateBookingDto createBookingDto)
     {
-        var IsSeatAvailable = await this._bookingRepository.VerifySeatBooking(createBookingDto);
+        // var IsSeatAvailable = await this._bookingRepository.VerifySeatBooking(createBookingDto);
 
-        if (IsSeatAvailable == false) return Conflict();
+        // if (IsSeatAvailable == false) return Conflict();
 
         var result = await this._bookingRepository.CreateBooking(createBookingDto);
 
-        return Ok(result.Id);
+        return Ok(result);
     }
 
-    [HttpGet("{id:int}")]
-    public async Task<ActionResult<Booking>> GetBookingByBookingId(int id)
-    {
-        var results = await this._bookingRepository.GetBookingById(id);
+    // [HttpGet("{id:int}")]
+    // public async Task<ActionResult<Booking>> GetBookingByBookingId(int id)
+    // {
+    //     var results = await this._bookingRepository.GetBookingById(id);
 
-        if (results == null) return NotFound();
+    //     if (results == null) return NotFound();
 
-        return Ok(results);
-    }
+    //     return Ok(results);
+    // }
 }

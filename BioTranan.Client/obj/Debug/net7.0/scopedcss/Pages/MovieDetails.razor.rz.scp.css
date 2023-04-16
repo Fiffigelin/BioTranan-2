@@ -1,118 +1,118 @@
 .hero-overlay[b-m6j37qtx4h] {
-  position: absolute;
-  top: 20px; /* Justera vertikal position */
-  left: 20px; /* Justera horisontell position */
-}
-
-.hero-overlay img[b-m6j37qtx4h] {
-  width: 100px; /* Justera bildens bredd */
-  height: 600px;
-  height: auto; /* Så att höjden anpassas proportionellt */
-}
-
-  .columns-container[b-m6j37qtx4h] {
-      display: flex;
-      justify-content: space-between;
-      margin: 20px;
-      flex-wrap: nowrap;
-  }
-
-  .left-column[b-m6j37qtx4h] {
-      width: 300px;
-      padding-left: 10px;
-      flex-basis: 25%;
+    position: absolute;
+    top: 20px; /* Justera vertikal position */
+    left: 20px; /* Justera horisontell position */
   }
   
-  .middle-column[b-m6j37qtx4h] {
-      flex-basis: 50%;
-      flex-grow: 4;
-      text-align: left;
+  .hero-overlay img[b-m6j37qtx4h] {
+    width: 100px; /* Justera bildens bredd */
+    height: 600px;
+    height: auto; /* Så att höjden anpassas proportionellt */
   }
   
-  .right-column-2[b-m6j37qtx4h] {
-      display: flex;
-      flex-direction: column;
-      width: 200px;
-      text-align: left;
-  }
-
-  .right-2-item-1[b-m6j37qtx4h] {
-    padding-left:20px;  
-  }
-
-  .right-2-item-2[b-m6j37qtx4h] {
-      padding-top:100px;
-  }
-
-  .right-column[b-m6j37qtx4h] {
-      text-align: right;
-      flex-basis: 25%;
-      width: 300px;
-  }
-
-  .movie-description[b-m6j37qtx4h], .movie-plot[b-m6j37qtx4h] {
-      /* Stilisera filminformation och filmens handling efter behov */
-  }
-
-  .booking-form[b-m6j37qtx4h] {
-      /* Stilisera bokningsformuläret efter behov */
-  }
-
-  .hero-image h1[b-m6j37qtx4h] {
-      font-size: 36px;
-      margin: 0;
-      padding-left: 115px;
-  }
-
-  .hero-image p[b-m6j37qtx4h] {
-      font-size: 18px;
-      margin: 0;
-      padding-left: 115px;
-      /* Tar bort eventuell marginal på p-elementet */
-  }
-
-  .booking-form[b-m6j37qtx4h] {
-      margin: 20px;
-  }
-
-  .movie-description[b-m6j37qtx4h] {
-      margin: 20px;
-  }
-
-  .columns-container[b-m6j37qtx4h] {
-      display: flex;
-      justify-content: space-between;
-      margin: 20px;
-  }
-
-  .right-column h2[b-m6j37qtx4h] {
-      margin-top: 0;
-  }
-
-  .right-column form[b-m6j37qtx4h] {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .right-column label[b-m6j37qtx4h],
-  .right-column input[b-m6j37qtx4h] {
-      margin-bottom: 10px;
-  }
-
-  .right-column input[type="email"][b-m6j37qtx4h],
-  .right-column input[type="number"][b-m6j37qtx4h] {
-      padding: 5px;
-      width: 100%;
-  }
-
-  .right-column input[type="submit"][b-m6j37qtx4h] {
-      padding: 10px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-  }
-
-  .right-column input[type="submit"]:hover[b-m6j37qtx4h] {
-      background-color: #0056b3;
-  }
+    .columns-container[b-m6j37qtx4h] {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        flex-wrap: nowrap;
+    }
+  
+    .left-column[b-m6j37qtx4h] {
+        width: 300px;
+        padding-left: 10px;
+        flex-basis: 25%;
+    }
+    
+    .middle-column[b-m6j37qtx4h] {
+        flex-basis: 50%;
+        flex-grow: 4;
+        text-align: left;
+    }
+    
+    .right-column-2[b-m6j37qtx4h] {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        text-align: left;
+    }
+  
+    .right-2-item-1[b-m6j37qtx4h] {
+      padding-left:20px;  
+    }
+  
+    .right-2-item-2[b-m6j37qtx4h] {
+        padding-top:100px;
+    }
+  
+    .right-column[b-m6j37qtx4h] {
+        text-align: right;
+        flex-basis: 25%;
+        width: 300px;
+    }
+  
+    .movie-description[b-m6j37qtx4h], .movie-plot[b-m6j37qtx4h] {
+        /* Stilisera filminformation och filmens handling efter behov */
+    }
+  
+    .booking-form[b-m6j37qtx4h] {
+        /* Stilisera bokningsformuläret efter behov */
+    }
+  
+    .hero-image h1[b-m6j37qtx4h] {
+        font-size: 36px;
+        margin: 0;
+        padding-left: 115px;
+    }
+  
+    .hero-image p[b-m6j37qtx4h] {
+        font-size: 18px;
+        margin: 0;
+        padding-left: 115px;
+        /* Tar bort eventuell marginal på p-elementet */
+    }
+  
+    .booking-form[b-m6j37qtx4h] {
+        margin: 20px;
+    }
+  
+    .movie-description[b-m6j37qtx4h] {
+        margin: 20px;
+    }
+  
+    .columns-container[b-m6j37qtx4h] {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+  
+    .right-column h2[b-m6j37qtx4h] {
+        margin-top: 0;
+    }
+  
+    .right-column form[b-m6j37qtx4h] {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .right-column label[b-m6j37qtx4h],
+    .right-column input[b-m6j37qtx4h] {
+        margin-bottom: 10px;
+    }
+  
+    .right-column input[type="email"][b-m6j37qtx4h],
+    .right-column input[type="number"][b-m6j37qtx4h] {
+        padding: 5px;
+        width: 100%;
+    }
+  
+    .right-column input[type="submit"][b-m6j37qtx4h] {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+  
+    .right-column input[type="submit"]:hover[b-m6j37qtx4h] {
+        background-color: #0056b3;
+    }

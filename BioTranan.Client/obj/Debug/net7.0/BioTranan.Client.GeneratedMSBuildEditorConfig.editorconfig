@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW92aWVEZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-m6j37qtx4h
 
+[C:/Users/nyman/Documents/SUVNET22/GIT/Inlämningar/BioTranan-2/BioTranan.Client/Pages/Receipt.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjZWlwdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mduvu4wgh4
+
 [C:/Users/nyman/Documents/SUVNET22/GIT/Inlämningar/BioTranan-2/BioTranan.Client/Pages/Shows.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvd3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = inherit-scope

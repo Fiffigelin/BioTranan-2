@@ -1,6 +1,5 @@
-using BioTranan.Client.Data;
-using BioTranan.Core.Services.Contracts;
-using BioTranan.Core.Services;
+using BioTranan.Client.Services.Contracts;
+using BioTranan.Client.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +11,6 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
-
 
 if (!app.Environment.IsDevelopment())
 {
@@ -26,6 +24,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
 app.Run();
