@@ -20,9 +20,17 @@ namespace BioTranan.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<Movie>> PostMovie([FromBody] CreateMovieDto movie)
         {
-            var result = await this._movieRepository.CreateMovie(movie);
+            if (movie == null)
+            {
+                return BadRequest("Ogiltig begäran");
+            }
 
-            if (movie == null) return NoContent();
+            var result = await _movieRepository.CreateMovie(movie);
+
+            if (result == null)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Fel vid skapandet av filmen");
+            }
 
             return Ok(result);
         }
@@ -30,9 +38,12 @@ namespace BioTranan.Api.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Movie>>> GetMovies()
         {
-            var results = await this._movieRepository.GetMovieList();
+            var results = await _movieRepository.GetMovieList();
 
-            if (results == null) return NotFound();
+            if (results == null || results.Count == 0)
+            {
+                return NotFound("Inga filmer hittades");
+            }
 
             return Ok(results);
         }
@@ -40,9 +51,12 @@ namespace BioTranan.Api.Controllers
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<Movie>> DeleteMovie(int id)
         {
-            var result = await this._movieRepository.DeleteMovie(id);
+            var result = await _movieRepository.DeleteMovie(id);
 
-            if (result == null) return BadRequest();
+            if (result == null)
+            {
+                return NotFound("Filmen kunde inte hittas");
+            }
 
             return Ok(result);
         }
