@@ -18,32 +18,62 @@ public class BookingController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Booking>> PostBooking([FromBody] CreateBookingDto createBookingDto)
     {
-        var IsSeatAvailable = await this._bookingRepository.VerifySeatBooking(createBookingDto);
+        try
+        {
+            var isSeatAvailable = await _bookingRepository.VerifySeatBooking(createBookingDto);
 
-        if (IsSeatAvailable == false) return Conflict();
+            if (!isSeatAvailable)
+            {
+                return Conflict();
+            }
 
-        var result = await this._bookingRepository.CreateBooking(createBookingDto);
+            var result = await _bookingRepository.CreateBooking(createBookingDto);
 
-        return Ok(result);
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Fel vid skapande av bokning");
+        }
     }
 
     [HttpGet]
     public async Task<ActionResult<List<Booking>>> GetBookings()
     {
-        var results = await this._bookingRepository.GetAllBookings();
+        try
+        {
+            var results = await _bookingRepository.GetAllBookings();
 
-        if (results == null) return NotFound();
+            if (results == null || results.Count == 0)
+            {
+                return NotFound();
+            }
 
-        return Ok(results);
+            return Ok(results);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Fel vid hämtning av bokningar");
+        }
     }
 
     [HttpGet("{id:int}")]
     public async Task<ActionResult<List<Booking>>> GetBookingsByShowId(int id)
     {
-        var results = await this._bookingRepository.GetBookingsByShow(id);
+        try
+        {
+            var results = await _bookingRepository.GetBookingsByShow(id);
 
-        if (results == null) return NotFound();
+            if (results == null || results.Count == 0)
+            {
+                return NotFound();
+            }
 
-        return Ok(results);
+            return Ok(results);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status404NotFound, "Showen du söker finns inte");
+        }
     }
 }
