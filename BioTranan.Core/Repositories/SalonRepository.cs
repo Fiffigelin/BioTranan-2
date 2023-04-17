@@ -45,4 +45,17 @@ public class SalonRepository : ISalonRepository
 
         return result;
     }
+
+    public async Task<Salon> DeleteSalon(int id)
+    {
+        var result = await _context.Salons.FindAsync(id);
+
+        if (result != null)
+        {
+            _context.Salons.Remove(result);
+            await _context.SaveChangesAsync();
+        }
+
+        return result!;
+    }
 }

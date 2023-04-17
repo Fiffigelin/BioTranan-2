@@ -7,4 +7,6 @@ public interface ISalonRepository
     Task<Salon> CreateSalon(CreateSalonDto createdSalon);
     Task<Salon> GetSalon(int id);
     Task<Salon> UpdateSalon(int id, CreateSalonDto updatedSalon);
+    Task<Salon> DeleteSalon(int id);
+
 }

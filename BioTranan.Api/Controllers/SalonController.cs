@@ -46,5 +46,18 @@ namespace BioTranan.Api.Controllers
 
             return Ok(result);
         }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<Salon>> DeleteSalon(int id)
+        {
+            var result = await this._salonRepository.DeleteSalon(id);
+
+            if (result == null)
+            {
+                return NotFound("Salongen kunde inte hittas");
+            }
+
+            return Ok(result);
+        }
     }
 }
