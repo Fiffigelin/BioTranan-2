@@ -10,8 +10,6 @@ public static class DtoConversions
                                                                 IEnumerable<Salon> salons,
                                                                 IEnumerable<Booking> bookings)
     {
-
-
         return (from show in shows
                 join movie in movies
                 on show.MovieId equals movie.Id
