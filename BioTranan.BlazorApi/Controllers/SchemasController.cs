@@ -20,7 +20,7 @@ public class SchemasController : ControllerBase
     public async Task<ActionResult<IEnumerable<ShowDetailsDto>>> GetSchema()
     {
         try
-        { // Gus! I have seen this in a tutorial! How can I minimize my try block?
+        {
             var movies = await _webRepository.GetMovies();
             var salons = await _webRepository.GetSalons();
             var shows = await _webRepository.GetShows();
@@ -34,7 +34,7 @@ public class SchemasController : ControllerBase
             var schemas = shows.ConvertToDto(movies, salons, bookings);
             return Ok(schemas);
         }
-        catch (System.Exception)
+        catch (Exception ex)
         {
             return StatusCode(StatusCodes.Status500InternalServerError, "Fel när data försökte hämtas från databasen");
         }
@@ -46,9 +46,9 @@ public class SchemasController : ControllerBase
         try
         {
             var show = await _webRepository.GetShow(id);
-            var movie = await _webRepository.GetMovie(show.MovieId);
-            var salon = await _webRepository.GetSalon(show.SalonId);
-            var bookings = await _webRepository.GetBookings(show.Id);
+            var movie = await _webRepository.GetMovie(show?.MovieId ?? -1);
+            var salon = await _webRepository.GetSalon(show?.SalonId ?? -1);
+            var bookings = await _webRepository.GetBookings(show?.Id ?? -1);
 
             if (movie == null || salon == null || show == null)
             {
@@ -58,7 +58,7 @@ public class SchemasController : ControllerBase
             var movieDetailsDto = show.ConvertToDto(movie, salon, bookings);
             return Ok(movieDetailsDto);
         }
-        catch (System.Exception)
+        catch (Exception ex)
         {
             return StatusCode(StatusCodes.Status500InternalServerError, "Fel när data försökte hämtas från databasen");
         }
