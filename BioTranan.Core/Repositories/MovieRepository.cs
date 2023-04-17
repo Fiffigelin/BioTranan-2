@@ -22,6 +22,7 @@ public class MovieRepository : IMovieRepository
             Title = createdMovie.Title,
             Description = createdMovie.Description,
             ReleaseYear = createdMovie.ReleaseYear,
+            HeroImageUrl = createdMovie.HeroImageUrl,
             DurationMinutes = createdMovie.DurationMinutes,
             Genre = createdMovie.Genre.ToString(),
             Director = createdMovie.Director,

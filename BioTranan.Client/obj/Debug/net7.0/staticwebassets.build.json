@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bh3N23A3EGbQiFsUVVBIOXF1XtXqB8N2CMmVz5vOv3E=",
+  "Hash": "INNo7EGWPMT9zYcApWWidV2YKeKgdm9/fT6Ay4DyWJI=",
   "Source": "BioTranan.Client",
   "BasePath": "_content/BioTranan.Client",
   "Mode": "Default",
@@ -304,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\wwwroot\\pexels-terrance-barksdale-10397068.jpg",
+      "SourceId": "BioTranan.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\wwwroot\\",
+      "BasePath": "_content/BioTranan.Client",
+      "RelativePath": "pexels-terrance-barksdale-10397068.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pexels-terrance-barksdale-10397068.jpg"
     }
   ]
 }

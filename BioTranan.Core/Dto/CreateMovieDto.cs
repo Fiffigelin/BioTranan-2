@@ -8,6 +8,7 @@ public class CreateMovieDto
     public string? Title { get; set; }
     public string? Description { get; set; }
     public int ReleaseYear { get; set; }
+    public string? HeroImageUrl { get; set; }
     [Required]
     public int DurationMinutes { get; set; }
     [JsonConverter(typeof(JsonStringEnumConverter))]
