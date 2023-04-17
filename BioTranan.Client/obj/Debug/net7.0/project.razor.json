@@ -360,6 +360,43 @@
         }
       },
       {
+        "HashCode": -1909435309,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.App",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.App",
+          "Common.TypeNamespace": "BioTranan.Client",
+          "Common.TypeNameIdentifier": "App"
+        }
+      },
+      {
+        "HashCode": 867196780,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.App",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BioTranan.Client.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.App",
+          "Common.TypeNamespace": "BioTranan.Client",
+          "Common.TypeNameIdentifier": "App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1033625580,
         "Kind": "Components.Component",
         "Name": "BioTranan.Client.Shared.MainLayout",
@@ -499,43 +536,6 @@
           "Common.TypeName": "BioTranan.Client.Shared.NavMenu",
           "Common.TypeNamespace": "BioTranan.Client.Shared",
           "Common.TypeNameIdentifier": "NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1909435309,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.App",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.App",
-          "Common.TypeNamespace": "BioTranan.Client",
-          "Common.TypeNameIdentifier": "App"
-        }
-      },
-      {
-        "HashCode": 867196780,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.App",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BioTranan.Client.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.App",
-          "Common.TypeNamespace": "BioTranan.Client",
-          "Common.TypeNameIdentifier": "App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
