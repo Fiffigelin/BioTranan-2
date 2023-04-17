@@ -63,8 +63,8 @@
   .container {
     width: 100%;
     text-align: center;
-    box-sizing: border-box; /*this keeps the box the same size no matter what is put inside and how wide the view screen is.*/
-    padding: 55px 45px;/*border-box kept the outside the same and squished the inside instead of the other way around.*/
+    box-sizing: border-box;
+    padding: 55px 45px;
     }
   .container > h2 {
     margin: 20px 0 10px;

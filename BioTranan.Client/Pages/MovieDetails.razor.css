@@ -1,13 +1,13 @@
 .hero-overlay {
     position: absolute;
-    top: 20px; /* Justera vertikal position */
-    left: 20px; /* Justera horisontell position */
+    top: 20px;
+    left: 20px; 
   }
   
   .hero-overlay img {
-    width: 100px; /* Justera bildens bredd */
+    width: 100px;
     height: 600px;
-    height: auto; /* Så att höjden anpassas proportionellt */
+    height: auto;
   }
   
     .columns-container {
@@ -51,11 +51,9 @@
     }
   
     .movie-description, .movie-plot {
-        /* Stilisera filminformation och filmens handling efter behov */
     }
   
     .booking-form {
-        /* Stilisera bokningsformuläret efter behov */
     }
   
     .hero-image h1 {
@@ -68,7 +66,6 @@
         font-size: 18px;
         margin: 0;
         padding-left: 115px;
-        /* Tar bort eventuell marginal på p-elementet */
     }
   
     .booking-form {

@@ -1,13 +1,13 @@
 .hero-overlay[b-m6j37qtx4h] {
     position: absolute;
-    top: 20px; /* Justera vertikal position */
-    left: 20px; /* Justera horisontell position */
+    top: 20px;
+    left: 20px; 
   }
   
   .hero-overlay img[b-m6j37qtx4h] {
-    width: 100px; /* Justera bildens bredd */
+    width: 100px;
     height: 600px;
-    height: auto; /* Så att höjden anpassas proportionellt */
+    height: auto;
   }
   
     .columns-container[b-m6j37qtx4h] {
@@ -51,11 +51,9 @@
     }
   
     .movie-description[b-m6j37qtx4h], .movie-plot[b-m6j37qtx4h] {
-        /* Stilisera filminformation och filmens handling efter behov */
     }
   
     .booking-form[b-m6j37qtx4h] {
-        /* Stilisera bokningsformuläret efter behov */
     }
   
     .hero-image h1[b-m6j37qtx4h] {
@@ -68,7 +66,6 @@
         font-size: 18px;
         margin: 0;
         padding-left: 115px;
-        /* Tar bort eventuell marginal på p-elementet */
     }
   
     .booking-form[b-m6j37qtx4h] {
