@@ -47,14 +47,13 @@ public class BookingController : ControllerBase
 
             if (result == null)
             {
-                return NotFound(); // Returnera HTTP 404 Not Found om bokningen inte hittas
+                return NotFound();
             }
 
-            return Ok(result); // Returnera HTTP 200 OK med bokningsresultatet
+            return Ok(result);
         }
-        catch (Exception ex) // Fånga alla exceptions som kan uppstå
+        catch (Exception ex)
         {
-            // Hantera exceptions och returnera lämplig HTTP-statuskod och meddelande
             return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error");
         }
     }
