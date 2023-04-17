@@ -205,65 +205,6 @@
         }
       },
       {
-        "HashCode": 1602668529,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.Pages.Receipt",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Receipt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.Pages.Receipt",
-          "Common.TypeNamespace": "BioTranan.Client.Pages",
-          "Common.TypeNameIdentifier": "Receipt"
-        }
-      },
-      {
-        "HashCode": -1372963664,
-        "Kind": "Components.Component",
-        "Name": "BioTranan.Client.Pages.Receipt",
-        "AssemblyName": "BioTranan.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BioTranan.Client.Pages.Receipt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Id",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Id",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BioTranan.Client.Pages.Receipt",
-          "Common.TypeNamespace": "BioTranan.Client.Pages",
-          "Common.TypeNameIdentifier": "Receipt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 682119542,
         "Kind": "Components.Component",
         "Name": "BioTranan.Client.Pages.Shows",
@@ -356,6 +297,102 @@
           "Common.TypeName": "BioTranan.Client.Pages.MovieDetails",
           "Common.TypeNamespace": "BioTranan.Client.Pages",
           "Common.TypeNameIdentifier": "MovieDetails",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1602668529,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.Pages.Receipt",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Receipt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.Pages.Receipt",
+          "Common.TypeNamespace": "BioTranan.Client.Pages",
+          "Common.TypeNameIdentifier": "Receipt"
+        }
+      },
+      {
+        "HashCode": -1372963664,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.Pages.Receipt",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BioTranan.Client.Pages.Receipt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Id",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.Pages.Receipt",
+          "Common.TypeNamespace": "BioTranan.Client.Pages",
+          "Common.TypeNameIdentifier": "Receipt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 480896918,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.Pages.Tickets",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tickets"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.Pages.Tickets",
+          "Common.TypeNamespace": "BioTranan.Client.Pages",
+          "Common.TypeNameIdentifier": "Tickets"
+        }
+      },
+      {
+        "HashCode": -1639263446,
+        "Kind": "Components.Component",
+        "Name": "BioTranan.Client.Pages.Tickets",
+        "AssemblyName": "BioTranan.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BioTranan.Client.Pages.Tickets"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BioTranan.Client.Pages.Tickets",
+          "Common.TypeNamespace": "BioTranan.Client.Pages",
+          "Common.TypeNameIdentifier": "Tickets",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -19214,6 +19251,11 @@
     {
       "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\nyman\\Documents\\SUVNET22\\GIT\\Inlämningar\\BioTranan-2\\BioTranan.Client\\Pages\\Tickets.razor",
+      "TargetPath": "Pages\\Tickets.razor",
       "FileKind": "component"
     }
   ],

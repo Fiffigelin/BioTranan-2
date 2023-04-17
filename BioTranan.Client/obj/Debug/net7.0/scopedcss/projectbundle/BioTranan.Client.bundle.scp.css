@@ -293,6 +293,130 @@ body[inherit-scope] {
     border-radius: 50%;
     width: 50px;
   }
+/* _content/BioTranan.Client/Pages/Tickets.razor.rz.scp.css */
+*[b-dx1qo796ry] {
+    margin: 0;
+    padding: 0;
+  }
+  body[b-dx1qo796ry], html[b-dx1qo796ry] {
+    min-width: 65%;
+    min-height: 100vh;
+  }
+  body[b-dx1qo796ry] {
+    background: #f9f9f9d0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .btn[b-dx1qo796ry] {
+    background-color: #5CAC66;
+    color: white;
+  }
+  
+  h2[b-dx1qo796ry], h5[b-dx1qo796ry] {
+    color: #2F463D;
+  }
+  
+  h2[b-dx1qo796ry], h5[b-dx1qo796ry], h6[b-dx1qo796ry], a[b-dx1qo796ry], button[b-dx1qo796ry] {
+    font-family: Montserrat;
+  }
+  
+  .card[b-dx1qo796ry] {
+    background-color: #fff;
+    box-shadow: 0 40px 40px -20px #2e8a64;
+    width: 370px;
+    height: 650px;
+    margin: 70px 0;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .card.left[b-dx1qo796ry] {
+    margin-right: -20px;
+  }
+  
+  .card.right[b-dx1qo796ry] {
+    margin-left: -20px;
+  }
+  .card.left[b-dx1qo796ry], .card.right[b-dx1qo796ry] {
+    height: 450px;
+    z-index: 1;
+    width: 350px;
+    margin-left: 600px;
+  }
+  
+  .card.center[b-dx1qo796ry] {
+     z-index: 9;
+     width: 370px;
+  }
+  .card:hover[b-dx1qo796ry] {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  #close-button[b-dx1qo796ry] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+  }
+  .container[b-dx1qo796ry] {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 55px 45px;
+    }
+  .container > h2[b-dx1qo796ry] {
+    margin: 20px 0 10px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .container > p[b-dx1qo796ry] {
+   font-family: Ubuntu;
+   font-size: 14px;
+   line-height: 20px;
+   color: #828282;
+  }
+  
+  .menu-item[b-dx1qo796ry] {
+    display: flex;
+    align-items: center;
+    background-color: #F0FFF5;
+    border-radius: 5px;
+    margin: 40px 0 30px;
+  }
+  .food-name-price[b-dx1qo796ry] {
+    width: 50%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .food-name-price h5[b-dx1qo796ry] {
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .food-name-price h6[b-dx1qo796ry] {
+   font-weight: 500;
+    color: #7A8F85;
+    font-weight: 12px;
+  }
+  .menu-item a[b-dx1qo796ry] {
+    color: #467A66;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .right[b-dx1qo796ry], .left[b-dx1qo796ry] {
+    display: none;
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .right[b-dx1qo796ry], .left[b-dx1qo796ry] {
+      display: block;
+    }
+  }
 /* _content/BioTranan.Client/Shared/MainLayout.razor.rz.scp.css */
 .page[b-6vhs9ed8b4] {
     position: relative;

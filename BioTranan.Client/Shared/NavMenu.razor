@@ -1,39 +1,4 @@
-﻿@* <nav class="navbar navbar-expand-md" style="background-color:#5CAC66">
-<div class="container-fluid">
-<a class="navbar-brand" href="">
-<img src="..\bio-tranan-high-resolution-logo-white-on-transparent-background.png" alt="BioTranan Logo"
-width="auto" height="30" />
-</a>
-<button class="navbar-toggler @NavButtonCssClass" type="button" data-bs-toggle="collapse"
-data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation"
-@onclick="ToggleNavMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-<style>
-.navbar {
-position: sticky;
-top: 0;
-}
-
-.nav-link {
-color: white;
-}
-</style>
-</div>
-</nav>
-
-@code {
-private bool collapseNavMenu = true;
-private string? NavBarCssClass => collapseNavMenu ? null : "show";
-private string? NavButtonCssClass => collapseNavMenu ? "collapsed" : null;
-
-private void ToggleNavMenu()
-{
-collapseNavMenu = !collapseNavMenu;
-}
-} *@
-
-<head>
+﻿<head>
     <style>
         .nav-item a.nav-link:hover {
             color: #ffffff;
@@ -55,7 +20,7 @@ collapseNavMenu = !collapseNavMenu;
         <div class="collapse navbar-collapse @NavBarCssClass" id="navbarCollapse">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/biljetter">Biljetter</a>
+                    <a class="nav-link" href="/tickets">Biljetter</a>
                 </li>
             </ul>
         </div>

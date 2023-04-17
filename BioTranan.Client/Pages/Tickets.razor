@@ -1,0 +1,43 @@
+@page "/tickets"
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biljetter</title>
+    <link rel="stylesheet" href="Tickets.razor.css" />
+</head>
+
+<div class="card left">
+    <div class="container" width="400px" align="center">
+        <form @onsubmit="SubmitForm">
+            <img src="favicon.png">
+            <div class="form-group">
+                <label for="email">E-postadress:</label>
+                <input type="email" class="form-control" id="email" name="email" @bind="email" />
+            </div>
+            <div class="form-group">
+                <label for="bookingNumber">Bokningsnummer:</label>
+                <input type="text" class="form-control" id="bookingNumber" name="bookingNumber" @bind="bookingNumber"
+                    maxlength="6" />
+            </div>
+            <button type="submit" class="btn btn-primary">Skicka</button>
+        </form>
+        <br>
+    </div>
+</div>
+
+</html>
+
+@code {
+    private string email;
+    private string bookingNumber;
+
+    private void SubmitForm()
+    {
+
+    }
+}

@@ -74,3 +74,4 @@ C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\
 C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.pdb
 C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\BioTranan.Client.genruntimeconfig.cache
 C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\ref\BioTranan.Client.dll
+C:\Users\nyman\Documents\SUVNET22\GIT\Inlämningar\BioTranan-2\BioTranan.Client\obj\Debug\net7.0\scopedcss\Pages\Tickets.razor.rz.scp.css
