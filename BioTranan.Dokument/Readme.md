@@ -41,7 +41,7 @@ Utöver detta vill Bio Tranan, som drivs av erfarna utvecklare, ha ett REST API 
 - [X] Lägga till nya salonger med ett visst antal platser
 - [X] Uppdatera och ta bort salongsinformation
 - [X] Lägga till nya visningar i schemat
-- [ ] Hämta hem schemat för alla **kommande** visningar
+- [X] Hämta hem schemat för alla **kommande** visningar
 - [X] Lista alla reservationer
 - [X] Lista alla reservationer för en viss visning
 

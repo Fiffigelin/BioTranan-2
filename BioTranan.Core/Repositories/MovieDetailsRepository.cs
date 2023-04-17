@@ -27,7 +27,13 @@ public class MovieDetailsRepository : IMovieDetailsRepository
 
     public async Task<IEnumerable<Show>> GetShows()
     {
-        return await this._context.Shows.ToListAsync();
+        var currentDateTime = DateTime.Now;
+
+        var shows = await this._context.Shows
+            .Where(s => s.StartTime > currentDateTime)
+            .ToListAsync();
+
+        return shows;
     }
     public async Task<IEnumerable<Booking>> GetBookings()
     {

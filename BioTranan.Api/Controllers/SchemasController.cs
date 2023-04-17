@@ -39,28 +39,4 @@ public class SchemasController : ControllerBase
             return StatusCode(StatusCodes.Status500InternalServerError, "Fel när data försökte hämtas från databasen");
         }
     }
-
-    [HttpGet("{id:int}")]
-    public async Task<ActionResult<IEnumerable<ShowDetailsDto>>> GetMovieDetails(int id)
-    {
-        try
-        {
-            var show = await _schemasRepository.GetShow(id);
-            var movie = await _schemasRepository.GetMovie(show?.MovieId ?? -1);
-            var salon = await _schemasRepository.GetSalon(show?.SalonId ?? -1);
-            var bookings = await _schemasRepository.GetBookings(show?.Id ?? -1);
-
-            if (movie == null || salon == null || show == null)
-            {
-                return NotFound();
-            }
-
-            var movieDetailsDto = show.ConvertToDto(movie, salon, bookings);
-            return Ok(movieDetailsDto);
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(StatusCodes.Status500InternalServerError, "Fel när data försökte hämtas från databasen");
-        }
-    }
 }

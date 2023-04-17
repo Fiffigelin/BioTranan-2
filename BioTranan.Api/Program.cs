@@ -1,4 +1,3 @@
-
 using BioTranan.Core.Helper;
 using BioTranan.Core.Repositories.Contracts;
 using BioTranan.Core.Repositories;
@@ -27,7 +26,6 @@ builder.Services.AddScoped<IMovieDetailsRepository, MovieDetailsRepository>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
