@@ -18,7 +18,6 @@ public static class DtoConversions
                 join salon in salons
                 on show.SalonId equals salon.Id
 
-                // let booking = bookings.FirstOrDefault(b => b.ShowId == show.Id)
                 select new ShowDetailsDto
                 {
                     MovieId = movie.Id,
@@ -51,6 +50,7 @@ public static class DtoConversions
             MovieGenre = movie.Genre,
             MovieDescription = movie.Description,
             MovieAgeRestriction = movie.AgeRestrictions,
+            MovieReleaseYear = movie.ReleaseYear,
             ShowId = show.Id,
             ShowStartTime = show.StartTime,
             ShowDurationHours = (int)TimeSpan.FromMinutes(movie.DurationMinutes).TotalHours,

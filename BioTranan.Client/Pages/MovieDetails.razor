@@ -52,8 +52,7 @@
             <div class="left-column">
                 <div class="movie-description">
                     <p>Regissör: @MovieDetails.MovieDirector</p>
-                    <p>Skådespelare: [Skådespelares namn]</p>
-                    <p>Utgivningsår: Något år</p>
+                    <p>Utgivningsår: @MovieDetails.MovieReleaseYear</p>
                 </div>
             </div>
             <div class="middle-column">
@@ -93,19 +92,26 @@
 
     private async void RedirectOnBooking()
     {
-        var booking = new CreateBookingDto
-            {
-                ShowId = @MovieDetails.ShowId,
-                AmountSeat = ticketQty,
-                UserEmail = userEmail,
-            };
+        if (@MovieDetails.AvailableSeats < ticketQty)
+        {
+            NavigationManager.NavigateTo($"/404", true);
+        }
+        else
+        {
+            var booking = new CreateBookingDto
+                {
+                    ShowId = @MovieDetails.ShowId,
+                    AmountSeat = ticketQty,
+                    UserEmail = userEmail,
+                };
 
-        var code = BookingCode();
-        booking.BookingCode = code;
+            var code = BookingCode();
+            booking.BookingCode = code;
 
-        await AddBooking_Click(booking);
+            await AddBooking_Click(booking);
 
-        NavigationManager.NavigateTo($"/bookingconfirmation/{code}", true);
+            NavigationManager.NavigateTo($"/bookingconfirmation/{code}", true);
+        }
     }
 
     private string BookingCode()

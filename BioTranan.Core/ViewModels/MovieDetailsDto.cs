@@ -8,6 +8,7 @@ public class MovieDetailsDto
     public string? MovieGenre { get; set; }
     public string? MovieDescription { get; set; }
     public string? MovieAgeRestriction { get; set; }
+    public int MovieReleaseYear { get; set; }
     public int ShowId { get; set; }
     public DateTime ShowStartTime { get; set; }
     public int ShowDurationHours { get; set; }

@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/nyman/Documents/SUVNET22/GIT/Inlämningar/BioTranan-2/BioTranan.Client/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/nyman/Documents/SUVNET22/GIT/Inlämningar/BioTranan-2/BioTranan.Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -47,10 +51,6 @@ build_metadata.AdditionalFiles.CssScope = inherit-scope
 [C:/Users/nyman/Documents/SUVNET22/GIT/Inlämningar/BioTranan-2/BioTranan.Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-6vhs9ed8b4
-
-[C:/Users/nyman/Documents/SUVNET22/GIT/Inlämningar/BioTranan-2/BioTranan.Client/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nyman/Documents/SUVNET22/GIT/Inlämningar/BioTranan-2/BioTranan.Client/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
