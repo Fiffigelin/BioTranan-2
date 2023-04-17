@@ -51,6 +51,7 @@ public static class DtoConversions
             MovieDescription = movie.Description,
             MovieAgeRestriction = movie.AgeRestrictions,
             MovieReleaseYear = movie.ReleaseYear,
+            MovieHeroImageUrl = movie.HeroImageUrl,
             ShowId = show.Id,
             ShowStartTime = show.StartTime,
             ShowDurationHours = (int)TimeSpan.FromMinutes(movie.DurationMinutes).TotalHours,

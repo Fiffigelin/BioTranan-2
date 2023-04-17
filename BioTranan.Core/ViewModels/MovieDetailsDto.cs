@@ -7,6 +7,7 @@ public class MovieDetailsDto
     public string? MovieDirector { get; set; }
     public string? MovieGenre { get; set; }
     public string? MovieDescription { get; set; }
+    public string? MovieHeroImageUrl { get; set; }
     public string? MovieAgeRestriction { get; set; }
     public int MovieReleaseYear { get; set; }
     public int ShowId { get; set; }
